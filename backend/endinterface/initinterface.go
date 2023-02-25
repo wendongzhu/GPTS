@@ -12,10 +12,10 @@ func init() {
 	go ws.Start()
 
 	time.Sleep(time.Second * 2)
-	// RS485
 
-	rs := drives.RS485{}
-	go rs.Start()
+	// RS485
+	//rs := drives.RS485{}
+	//go rs.Start()
 
 }
 
