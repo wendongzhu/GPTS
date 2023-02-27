@@ -2,9 +2,17 @@
 <div>
   <el-row :gutter="0">
       <!--Footer-->
-      <div class="grid-content bg-purple-dark" :style="defaultFooterWidth">
-<!--        预留-->
+    <div class="footer-device">
+      <font size="2" font-weight="bold">设备连接状态</font>
+    </div>
+    <div class="footer-device-status">
+<!--      <el-button type="success" icon="Cpu" size="small" circle />-->
+      <el-button type="danger" icon="Cpu" size="small" circle />
+    </div>
+      <div class="footer" :style="defaultFooterWidth">
+      <!--中间预留-->
       </div>
+
       <!--时间-->
       <div class="footer-time" >
         <font size="2" font-weight="bold">{{ getTime }}</font>
@@ -67,7 +75,7 @@ export default {
       _this.getTime = year + "-" + month + "-" + day + " " + hours + ":" + minutes + ":" + seconds;
     },
     getFooterWidth() {
-      this.defaultFooterWidth.width = window.innerWidth - 180 + "px";
+      this.defaultFooterWidth.width = window.innerWidth - 180 - 150 + "px";
     },
   }
 }
@@ -77,5 +85,11 @@ export default {
 <style scoped>
 .footer-time{
   padding: 4px 0 4px 0;
+}
+.footer-device{
+  padding: 4px 15px 4px 0;
+}
+.footer-device-status{
+  padding-top: 3px;
 }
 </style>

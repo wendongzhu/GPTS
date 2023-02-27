@@ -68,6 +68,7 @@ export default {
 .layout-index-main {
   padding: 2px 0;
   background: #1E1F22;
+  color: #c8c9cc;
 }
 
 </style>

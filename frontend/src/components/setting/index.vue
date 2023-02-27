@@ -32,8 +32,8 @@ export default {
   methods: {
     //定义方法，获取高度减去头尾
     getHeight() {
-      this.settingHeader.width = window.innerWidth - 40 - 2 + "px"
-      this.settingHeader.width = window.innerWidth - 40 - 2 + "px"
+      this.settingHeader.width = window.innerWidth - 40 - 2 - 40 - 2 + "px"
+      this.settingHeader.width = window.innerWidth - 40 - 2 - 40 - 2 + "px"
       this.settingMain.height = window.innerHeight - 70 -60 - 4- 4 + "px";
     },
   },

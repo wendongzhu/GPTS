@@ -4,10 +4,12 @@
       <div class="collection-index-header-txt" :style="defaultHeaderWidth">
         <!--中间预留-->
       </div>
-      <el-button-group class="setting-header-button">
-        <el-button icon="RefreshRight"  color="#2B2D30">默认恢复</el-button>
-        <el-button icon="Check" bg color="#2B2D30">保存参数</el-button>
-        <el-button icon="Close" color="#2B2D30">放弃退出</el-button>
+
+      <el-button-group class="history-header-button">
+        <el-button icon="Search"  color="#2B2D30">筛选数据</el-button>
+        <el-button icon="View" bg color="#2B2D30">查看数据</el-button>
+        <el-button icon="Delete" color="#2B2D30">删除数据</el-button>
+        <el-button icon="Collection" color="#2B2D30">导出数据</el-button>
       </el-button-group>
 
     </el-row>
@@ -28,7 +30,7 @@ export default {
 
   methods: {
     getFooterWidth() {
-      this.defaultHeaderWidth.width = window.innerWidth - 40 - 2 - 40 - 2 - 350 + "px";
+      this.defaultHeaderWidth.width = window.innerWidth - 40 - 2 - 40 - 2 - 450 + "px";
     },
   },
   created() {
@@ -39,7 +41,7 @@ export default {
 </script>
 
 <style scoped>
-.setting-header-button{
+.history-header-button{
   padding: 15px 0 15px 0;
 
 }

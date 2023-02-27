@@ -1,24 +1,28 @@
 <template>
   <el-container>
     <el-aside class="layout-index-aside" :style="defaultHeight" style="--wails-draggable:drag">
-      <LayoutAside/>
+      <LayoutLeftAside/>
     </el-aside>
 
     <!--Layout Main-->
     <el-main class="layout-index-home" :style="defaultHeight">
-<!--      <LayoutMain />-->
       <router-view></router-view>
     </el-main>
+
+    <el-aside class="layout-index-aside" :style="defaultHeight" style="--wails-draggable:drag">
+      <LayoutRightAside/>
+    </el-aside>
   </el-container>
 </template>
 
 <script>
-import LayoutAside from "./aside.vue";
+import LayoutLeftAside from "./left_aside.vue";
+import LayoutRightAside from "./right_aside.vue"
 import LayoutHome from "../home/index.vue";
 
 export default {
   name: "main",
-  components: { LayoutAside, LayoutHome },
+  components: { LayoutLeftAside, LayoutHome, LayoutRightAside },
   data() {
     return {
       defaultHeight: {

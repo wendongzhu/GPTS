@@ -1,11 +1,9 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 
 const routes: Array<RouteRecordRaw> = [
-
   {
-    path: "/setting",
-    name: "setting",
-    component: () => import("../components/setting/index.vue"),
+    path: "/",
+    redirect: "collection",
   },
   {
     path: "/collection",
@@ -21,6 +19,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/history",
     name: "history",
     component: () => import("../components/history/index.vue"),
+  },
+  {
+    path: "/setting",
+    name: "setting",
+    component: () => import("../components/setting/index.vue"),
   },
   {
     path: "/help",
