@@ -1,6 +1,5 @@
 <template>
   <div id="collection-main">
-<!--    <div class="collection-echarts" id="collectionEcharts" :style="collectionEchartsSize"> </div>-->
     <div id="collectionEcharts" :style="collectionEchartsSize"></div>
     <div>
       <el-row>
@@ -417,6 +416,10 @@ export default {
 
       // 使用刚指定的配置项和数据显示图表。
       myChart.setOption(option);
+
+      window.addEventListener('resize',function () {//执行
+        myChart.resize();
+      });
     },
 
     getWindowSize() {
