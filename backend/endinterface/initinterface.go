@@ -2,14 +2,13 @@ package endinterface
 
 import (
 	"context"
-	"github.com/wendongzhu/GPTS/backend/service/drives"
 	"time"
 )
 
 func init() {
 	// websocket
-	ws := drives.WebSocket{}
-	go ws.Start()
+	//ws := drives.WebSocket{}
+	//go ws.Start()
 
 	time.Sleep(time.Second * 2)
 

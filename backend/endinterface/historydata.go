@@ -1,0 +1,5 @@
+package endinterface
+
+func HistoryData() {
+
+}

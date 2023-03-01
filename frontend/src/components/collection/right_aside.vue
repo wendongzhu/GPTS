@@ -35,7 +35,7 @@ export default {
           children: [
             {
               id: '0-1',
-              name: '测试盒温度'
+              name: '测试盒温度',
             }
           ]
         }, {
@@ -290,18 +290,21 @@ export default {
       }
       // 将修改后的值再赋给tree
       this.$refs['tree'].setCheckedKeys(chooseData)
-    }
+    },
+
   }
 }
 </script>
+
 <style>
-/* 把select的下拉框隐藏 */
-.hiddenSel{
-  /*display: none;*/
-}
 .collection-right-aside-tree{
   background: #2B2D30;
   color: #2B2D30;
+}
+.el-tree-node:focus>.el-tree-node__content{
+  /*background-color: #fff;!*节点的背景颜色*!*/
+  font-size: 14px;
+  color: #ff4d51;/*节点的字体颜色*/
 }
 </style>
 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemConfig version="">
+	<DisplayParam>
+		<TestUser>测试软件</TestUser>
+		<TestAddress>北京</TestAddress>
+		<TestCompany>wuhan</TestCompany>
+		<ProbePipeSetItem ID="0">
+			<ChannelName>第1路</ChannelName>
+			<PowerStatus>NO</PowerStatus>
+			<VoltageThreshold>30</VoltageThreshold>
+			<CurrentThreshold>800</CurrentThreshold>
+			<PipeNumber>1</PipeNumber>
+		</ProbePipeSetItem>
+		<ProbePipeSetItem ID="1">
+			<ChannelName>第2路</ChannelName>
+			<PowerStatus>NO</PowerStatus>
+			<VoltageThreshold>30</VoltageThreshold>
+			<CurrentThreshold>800</CurrentThreshold>
+			<PipeNumber>2</PipeNumber>
+		</ProbePipeSetItem>
+		<ProbePipeSetItem ID="2">
+			<ChannelName>第3路</ChannelName>
+			<PowerStatus>NO</PowerStatus>
+			<VoltageThreshold>30</VoltageThreshold>
+			<CurrentThreshold>800</CurrentThreshold>
+			<PipeNumber>3</PipeNumber>
+		</ProbePipeSetItem>
+		<ProbePipeSetItem ID="3">
+			<ChannelName>第4路</ChannelName>
+			<PowerStatus>NO</PowerStatus>
+			<VoltageThreshold>30</VoltageThreshold>
+			<CurrentThreshold>800</CurrentThreshold>
+			<PipeNumber>4</PipeNumber>
+		</ProbePipeSetItem>
+		<ProbePipeSetItem ID="4">
+			<ChannelName>第5路</ChannelName>
+			<PowerStatus>NO</PowerStatus>
+			<VoltageThreshold>30</VoltageThreshold>
+			<CurrentThreshold>800</CurrentThreshold>
+			<PipeNumber>5</PipeNumber>
+		</ProbePipeSetItem>
+		<ProbePipeSetItem ID="5">
+			<ChannelName>第6路</ChannelName>
+			<PowerStatus>NO</PowerStatus>
+			<VoltageThreshold>30</VoltageThreshold>
+			<CurrentThreshold>800</CurrentThreshold>
+			<PipeNumber>6</PipeNumber>
+		</ProbePipeSetItem>
+		<ProbePipeSetItem ID="6">
+			<ChannelName>第7路</ChannelName>
+			<PowerStatus>NO</PowerStatus>
+			<VoltageThreshold>30</VoltageThreshold>
+			<CurrentThreshold>800</CurrentThreshold>
+			<PipeNumber>7</PipeNumber>
+		</ProbePipeSetItem>
+		<ProbePipeSetItem ID="7">
+			<ChannelName>第8路</ChannelName>
+			<PowerStatus>NO</PowerStatus>
+			<VoltageThreshold>30</VoltageThreshold>
+			<CurrentThreshold>800</CurrentThreshold>
+			<PipeNumber>8</PipeNumber>
+		</ProbePipeSetItem>
+		<TestDescription>第一次测试信息</TestDescription>
+	</DisplayParam>
+	<TestInfo></TestInfo>
+	<SystemParam>
+		<PortName>COM3</PortName>
+		<TimeInterval>50</TimeInterval>
+		<FilePrefix>test</FilePrefix>
+		<WorkPath>E:\workspace\go\src</WorkPath>
+	</SystemParam>
+</SystemConfig>
